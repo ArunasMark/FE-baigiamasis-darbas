@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Baigiamasis darbas</title>
+</head>
+
+<body>
+    <div class="main_container" id="home">
+        <header>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#home">Home</a></li>
+                    <li><a class="menu__item" href="#1">Task 1</a></li>
+                    <li><a class="menu__item" href="#2">Task 2</a></li>
+                    <li><a class="menu__item" href="#3">Task 3</a></li>
+                    <li><a class="menu__item" href="#4">Task 4</a></li>
+                </ul>
+            </div>
+        </header>
+        <h1 id="1">Baigiamasis FE darbas</h1>
+        <h2>UŽDUOTYS</h2>
+        <div class="container_text">
+            <p>
+                1. Paspaudus ant mygtuko, puslapyje esantis div atsiranda/pranyksta. <br>
+                2. Turit vieną div, su aukščiu,pločiu ir spalva bei 4 mygtukus, su kuriais galit valdyt sukurto div
+                savybes: plotis,
+                aukstis, centravimas ir pozicija. <br>
+                3. Burgeris ir šoninis Meniu - paspaudus ant burgerio gražiai išvažiuoja šoninis meniu. <br>
+                4. Bent 4 div elementai, pradžioje visi juodos spalvos, paspaudus bent ant vieno iš jų, yra pakeičiamos
+                spalvos visiems.
+                Spalvos generuojamos random. <br>
+                5. Formoje pildoma "vardas", "pavardė" ir "gimimo data". Duomneys kaupiami lentelėje. Stulpeliai: Eil.
+                Nr., Vardas,
+                Pavardė, Amžius.<br>
+                Visos užduotys turi būti stilizuotos, kad nebūtų sumaišytos. Kiekviena turi turėti savo section,
+                headingus ir pan.
+            </p>
+        </div>
+        <h2>1. Visible/Invisible</h2>
+        <div class="first_container">
+            <button type="button" onclick="hideShow()" class="btn">On/Off</button>
+            <div class="box" id="box1">
+            </div>
+        </div>
+        <h2 id="2">2. Flexible box</h2>
+        <div class="second_container">
+            <div class="buttons_box">
+                <button type="button" onclick="changeHeight()" class="btn">Height</button>
+                <button type="button" onclick="changeWidth()" class="btn">Width</button>
+                <button class="btn" onclick="centered()">Center</button>
+                <button class="btn" onclick="positioned()">Position</button>
+                <button class="btn" onclick="reset()">Reset</button>
+            </div>
+            <div class="container_box">
+                <div class="box" id="box2">
+                </div>
+            </div>
+        </div>
+        <h2 id="3">3. Colored boxes</h2>
+        <h3>(* dblclick)</h3>
+        <div class="third_container">
+            <div class="box-color" ondblclick="randomColor()">
+                <h2 class="color-numer"></h2>
+            </div>
+            <div class="box-color" ondblclick="randomColor()">
+                <h2 class="color-numer"></h2>
+            </div>
+            <div class="box-color" ondblclick="randomColor()">
+                <h2 class="color-numer"></h2>
+            </div>
+            <div class="box-color" ondblclick="randomColor()">
+                <h2 class="color-numer"></h2>
+            </div>
+            <div class="box-color" ondblclick="randomColor()">
+                <h2 class="color-numer"></h2>
+            </div>
+        </div>
+        <h2 id="4">4. Form</h2>
+        <div class="fourth_container">
+            <form action="">
+                <label for="name">Vardas</label>
+                <input type="text" id="name" placeholder="Vardas">
+                <label for="lastName">Pavardė</label>
+                <input type="text" id="lastName" placeholder="Pavardė">
+                <label for="date">Gim. data</label>
+                <input type="date" id="date">
+                <div class="buttons">
+                    <input type="button" id="submit" value="  Įvesti  ">
+                    <input type="button" id="reset" value="  Ištrinti  ">
+                </div>
+            </form>
+            <div class="form_table">
+                <table id="table">
+                    <tr>
+                        <th>Eil. Nr.</th>
+                        <th>Vardas</th>
+                        <th>Pavardė</th>
+                        <th>Amžius</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
