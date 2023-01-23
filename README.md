@@ -4,6 +4,10 @@ https://arunasmark.github.io/FE-baigiamasis-darbas/
 
 
 
-![fe-baigiamasis-update_LVeEc6Qh](https://user-images.githubusercontent.com/107833251/214018797-682f2071-693c-42ac-b4ac-1523c8435c10.gif)
+
+https://user-images.githubusercontent.com/107833251/214023721-d90a23e6-3dc2-4618-8a6d-57b957b85d89.mp4
+
+
+
 
 
